@@ -1,4 +1,8 @@
 .ahd-header {
+  box-shadow: 0 0 20px 0 rgba(42, 56, 136, 0.16);
+  position: sticky;
+  top: 0;
+  z-index: 99;
   .info-header {
     background-color: map-get($theme-colors, "ahd-primary");
     padding: 10px 0;
@@ -9,6 +13,7 @@
     }
   }
   .ahd-navbar {
+    background-color: #fff;
     .nav-brand {
       img {
         width: 102px;

@@ -4,3 +4,23 @@ a {
     text-decoration: none;
   }
 }
+
+.media {
+  display: flex;
+  img {
+    width: 150px;
+    border-radius: 6px;
+  }
+  .media-body {
+    padding: 0.25rem 1rem;
+    .media-title {
+      margin-bottom: 0.25rem;
+    }
+    .media-description {
+      color: #7c8087;
+    }
+    .media-info {
+      color: #7c8087;
+    }
+  }
+}

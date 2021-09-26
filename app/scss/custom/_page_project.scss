@@ -1,0 +1,118 @@
+.page-project {
+  .project-map {
+    position: sticky;
+    top: 130px;
+    flex: 0 0 800px;
+    min-height: 500px;
+    @include media-breakpoint-down(xxl) {
+      flex: 0 0 550px;
+    }
+    @include media-breakpoint-down(xl) {
+      flex: 0 0 470px;
+    }
+    @include media-breakpoint-down(lg) {
+      flex: 0 0 100%;
+    }
+  }
+  .container-xl {
+    padding: 56px 40px 60px 40px;
+    flex: 1;
+    @include media-breakpoint-down(lg) {
+      padding: 56px 20px 60px 20px;
+      min-width: unset;
+    }
+    @include media-breakpoint-down(md) {
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+    }
+  }
+  .project-name {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 41px;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-filter {
+    border-radius: 8px;
+    border: 1px solid #e5e7e9;
+    .filter-item {
+      &:nth-child(2) {
+        border-left: 1px solid #e5e7e9;
+        border-right: 1px solid #e5e7e9;
+        @include media-breakpoint-down(sm) {
+          border: 0;
+        }
+      }
+      flex: 1;
+      padding: 10px 16px;
+      .filter-label {
+        img {
+          width: 20px;
+          height: auto;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .project-item {
+    padding: 24px 0;
+    .media {
+      padding: 24px 0;
+
+      img {
+        width: 288px;
+        object-fit: cover;
+        @include media-breakpoint-down(xl) {
+          width: 170px;
+        }
+        @include media-breakpoint-down(lg) {
+          width: 288px;
+        }
+        @include media-breakpoint-down(md) {
+          width: 170px;
+        }
+      }
+
+      .media-body {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        .media-description {
+          margin: 5px 0;
+          display: flex;
+          flex-wrap: wrap;
+          .fa-map-marker {
+            color: map-get($theme-colors, "ahd-success");
+          }
+        }
+        .media-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .btn-heart {
+            padding: 3px 8px;
+            border-radius: 50%;
+            box-shadow: 0 3px 20px 0 rgba(42, 56, 136, 0.16);
+            .fa-heart {
+              transition: color 0.3s;
+              &:hover {
+                font-weight: 900;
+                color: #f9bcc6;
+              }
+            }
+          }
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        img {
+          width: 100%;
+        }
+        .media-body {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+.ahd-body {
+  .front-banner {
+    background: url("../images/banner/banner-search.png") no-repeat;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    position: relative;
+    @include media-breakpoint-down(md) {
+      aspect-ratio: unset;
+      min-height: 350px;
+    }
+    .search-form {
+      position: absolute;
+      bottom: 80px;
+      width: 100%;
+      text-align: center;
+      @include media-breakpoint-down(lg) {
+        bottom: 40px;
+      }
+      @include media-breakpoint-down(md) {
+        bottom: 20px;
+      }
+      .container {
+        max-width: 1000px;
+      }
+      .slogan {
+        margin-bottom: 2.5rem;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 41px;
+        letter-spacing: 0.17px;
+        @include media-breakpoint-down(lg) {
+          font-size: 26px;
+          margin-bottom: 2rem;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 22px;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .search-container {
+        padding: 16px;
+        border-radius: 12px;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        background-color: #f2f3f460;
+        position: relative;
+        .input-search-group {
+          position: relative;
+          background-color: #fff;
+          border-radius: 8px;
+          padding: 4px 4px 4px 24px;
+          display: flex;
+          justify-content: space-between;
+
+          input {
+            padding: 0;
+            box-shadow: none;
+            outline: 0;
+            border: 0;
+            &::placeholder {
+              color: #8e8e93;
+              line-height: 26px;
+            }
+          }
+          button {
+            padding: 14px 29px;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: none;
+            @include media-breakpoint-down(md) {
+              padding: 8px 18px;
+            }
+          }
+
+          .suggestion {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+            position: absolute;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 24px;
+            width: 100%;
+            top: 85px;
+            box-shadow: 0 3px 20px 0 rgba(42, 56, 136, 0.16);
+            &.show {
+              visibility: visible;
+              opacity: 1;
+            }
+            .media {
+              display: flex;
+              img {
+                width: 150px;
+                border-radius: 6px;
+              }
+              .media-body {
+                padding: 0.25rem 1rem;
+                .media-title {
+                  text-align: left;
+                  margin-bottom: 0.25rem;
+                }
+                .media-description {
+                  color: #7c8087;
+                  .fa-map-marker {
+                    color: #f59696;
+                  }
+                }
+              }
+            }
+            .suggest-text-container {
+              text-align: left;
+              .suggest-text {
+                padding: 0.5rem 0;
+              }
+            }
+          }
+        }
+
+        .city-label {
+          color: #fff;
+          margin-top: 1.5rem;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+  .front-introduce {
+    .introduce-amount {
+      padding: 80px 0;
+      .highlight-number {
+        font-size: 52px;
+        line-height: 41px;
+        font-weight: bold;
+        color: map-get($theme-colors, "ahd-primary");
+        margin-bottom: 1rem;
+        @include media-breakpoint-down(md) {
+          font-size: 40px;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        padding: 50px 0;
+      }
+    }
+    .featured-projects {
+      padding: 100px 0;
+      @include media-breakpoint-down(md) {
+        padding: 50px 0;
+      }
+      .featured-title {
+        font-size: 30px;
+        line-height: 41px;
+        font-weight: 500;
+        letter-spacing: 0.17px;
+        margin-bottom: 0.75rem;
+      }
+      .featured-projects-items {
+        margin-top: 48px;
+        .item {
+          padding: 8px 8px 8px 20px;
+          border-left: 8px solid map-get($theme-colors, "ahd-success");
+          margin-bottom: 2.5rem;
+          &:hover {
+            .info-hidden {
+              max-height: 300px;
+            }
+          }
+          .item-title {
+            font-size: 24px;
+            margin-bottom: 0.75rem;
+          }
+          .info-hidden {
+            max-height: 0;
+            margin-top: 0.5rem;
+            overflow: hidden;
+            opacity: 0.6;
+            transition: max-height 0.5s;
+            .info-small {
+              font-size: 14px;
+            }
+            .load-more {
+              color: map-get($theme-colors, "ahd-success");
+            }
+          }
+          @include media-breakpoint-down(md) {
+            padding: 0 12px;
+            margin-bottom: 1rem;
+            .item-title {
+              font-size: 20px;
+              margin-bottom: 0.25rem;
+            }
+          }
+        }
+      }
+      .featured-projects-image {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .front-carousel {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    background: url("../images/background-utilities.png") no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+    .carousel-title {
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: 0.17px;
+      margin-bottom: 1.5rem;
+    }
+    .carousel-subtitle {
+      margin-bottom: 3rem;
+    }
+    .carousel {
+      .image-card {
+        position: relative;
+        img {
+          border-radius: 8px;
+          aspect-ratio: 16/9;
+          object-fit: cover;
+        }
+        .card-body {
+          padding: 16px;
+          position: absolute;
+          top: 0;
+          flex-direction: column;
+          display: flex;
+          justify-content: end;
+          height: 100%;
+          width: 100%;
+          vertical-align: bottom;
+          color: #fff;
+          background-image: linear-gradient(to bottom, #1d293f00, #1d293f99);
+          background-blend-mode: multiply;
+          border-radius: 8px;
+          .card-title {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+          }
+          .description {
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+}

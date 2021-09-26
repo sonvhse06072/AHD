@@ -1,0 +1,78 @@
+.ahd-footer {
+  background-color: map-get($theme-colors, "ahd-primary");
+  padding: 64px 0 96px 0;
+  color: #fff;
+  .footer-logo {
+    img {
+      width: 136px;
+      margin-bottom: 32px;
+    }
+  }
+  .footer-separate {
+    border-bottom: 1px solid #e5e7e9;
+    margin-top: 31px;
+    margin-bottom: 63px;
+  }
+  .footer-title {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 32px;
+  }
+
+  .join-with-us {
+    button {
+      color: #fff;
+      width: 250px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-radius: 6px;
+      @include media-breakpoint-down(xl) {
+        width: 200px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 150px;
+      }
+    }
+  }
+  .footer-input-group {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4px 4px 4px 24px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+
+    input {
+      padding: 0;
+      box-shadow: none;
+      outline: 0;
+      border: 0;
+      &::placeholder {
+        color: #8e8e93;
+      }
+    }
+    button {
+      padding: 12px 20px;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: none;
+      @include media-breakpoint-down(md) {
+        padding: 8px 12px;
+      }
+    }
+  }
+  .footer-menu {
+    .menu-label {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    .menu-link {
+      padding: 8px 0;
+      display: block;
+      color: #fff;
+    }
+  }
+}

@@ -67,7 +67,6 @@
           button {
             padding: 14px 29px;
             color: #fff;
-            border-radius: 8px;
             box-shadow: none;
             @include media-breakpoint-down(md) {
               padding: 8px 18px;
@@ -206,41 +205,6 @@
     }
     .carousel-subtitle {
       margin-bottom: 3rem;
-    }
-    .carousel {
-      .image-card {
-        position: relative;
-        img {
-          border-radius: 8px;
-          aspect-ratio: 16/9;
-          object-fit: cover;
-        }
-        .card-body {
-          padding: 16px;
-          position: absolute;
-          top: 0;
-          flex-direction: column;
-          display: flex;
-          justify-content: end;
-          height: 100%;
-          width: 100%;
-          vertical-align: bottom;
-          color: #fff;
-          background-image: linear-gradient(to bottom, #1d293f00, #1d293f99);
-          background-blend-mode: multiply;
-          border-radius: 8px;
-          .card-title {
-            font-size: 18px;
-            line-height: 25px;
-            font-weight: bold;
-            margin-bottom: 0.75rem;
-          }
-          .description {
-            font-size: 14px;
-            line-height: 19px;
-          }
-        }
-      }
     }
   }
 }

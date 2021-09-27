@@ -11,7 +11,7 @@ $container-max-widths: (
   sm: 100%,
   md: 720px,
   lg: 960px,
-  xl: 1240px,
+  xl: 1340px,
   xxl: 1600px,
 );
 @media screen and (max-width: 576px) {
@@ -25,6 +25,7 @@ $link-color: mix(#1d293f, #1d293f);
 $theme-colors: (
   "black": #000000,
   "ahd-primary": #0e1e8e,
+  "ahd-secondary": #e5e7e9,
   "ahd-success": #00c199,
   "ahd-red": #ee4034,
   "ahd-blue": #0d6efd,

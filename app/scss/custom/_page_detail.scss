@@ -1,0 +1,201 @@
+.page-detail {
+    .project-head {
+        background: url("../images/background-info.png") no-repeat;
+        width: 100%;
+        aspect-ratio: 16/9;
+        background-size: 60%;
+        background-position: right bottom;
+        margin-bottom: 1.5rem;
+
+        .container-xl {
+            padding-top: 90px;
+
+            @include media-breakpoint-down(md) {
+                padding-top: 20px;
+            }
+        }
+
+        .project-title {
+            font-size: 44px;
+            line-height: 57px;
+            font-weight: 500;
+            margin-bottom: 2rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: .5rem;
+            }
+        }
+
+        .project-address {
+            color: #7c8087;
+            margin-bottom: 2rem;
+        }
+
+        .btn-ahd-success {
+            color: #fff;
+            padding: 16px 24px;
+
+            @include media-breakpoint-down(md) {
+                padding: 8px 12px;
+            }
+        }
+
+        .btn-outline-ahd-secondary {
+            color: #1d293f;
+            padding: 16px 24px;
+            background: #fff;
+        }
+    }
+
+    .project-detail {
+        .navbar-nav {
+            .nav-item {
+                padding: 0 0 12px 0;
+
+                .nav-link {
+                    color: #8e8e93;
+                }
+
+                &:hover {
+                    border-color: map-get($theme-colors, "ahd-primary");
+
+                    .nav-link {
+                        color: map-get($theme-colors, "ahd-primary");
+                    }
+                }
+
+                &.active {
+                    border-color: map-get($theme-colors, "ahd-primary");
+
+                    .nav-link {
+                        color: map-get($theme-colors, "ahd-primary");
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                .nav-item {
+                    padding: 0;
+
+                    .nav-link {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        .intro {
+            padding-bottom: 60px;
+            border-bottom: solid 1.5px #e2e4e8;
+            margin-bottom: 2rem;
+
+            .intro-label {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 1.25rem;
+            }
+
+            .info-label {
+                font-size: 14px;
+                line-height: 19px;
+                color: #7c8087;
+            }
+
+            .icon-info {
+                height: 56px;
+            }
+
+            .image-design {
+                border-radius: 16px;
+            }
+
+            .place-link {
+                color: #8e8e93;
+
+                &:hover {
+                    color: map-get($theme-colors, 'ahd-primary');
+                }
+
+                &.active {
+                    color: map-get($theme-colors, 'ahd-primary');
+                }
+            }
+
+            .input-group {
+                width: unset;
+
+                .place-filter {
+                    width: 300px;
+                    border: 0;
+                    background: #f2f3f4;
+                    border-radius: 6px 0 0 6px;
+                }
+
+                .btn-search {
+                    background: #f2f3f4;
+                    border-radius: 0 6px 6px 0;
+                }
+            }
+        }
+
+        .list-depart-card {
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: solid 1.5px #e2e4e8;
+
+            .list-depart-card-header {
+
+                .title {
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: 500;
+                    margin-bottom: 1.25rem;
+                }
+
+                .btn-filter {
+                    padding: 12px 20px;
+                    border: 1px solid map-get($theme-colors, 'ahd-secondary');
+
+                    &:hover {
+                        color: map-get($theme-colors, 'ahd-primary');
+                        border-color: map-get($theme-colors, 'ahd-primary');
+                    }
+
+                    img {
+                        width: 20px;
+                    }
+                }
+
+                .btn-dropdown {
+                    padding: 12px 20px;
+                    border: 0;
+
+                    &:hover {
+                        color: map-get($theme-colors, 'ahd-primary');
+                    }
+                }
+            }
+
+            .list-depart-card-body {
+                margin: 20px 0;
+                height: 900px;
+                overflow: auto;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .image-card {
+                    margin: 1.5rem 0;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                padding: .75rem;
+            }
+        }
+    }
+}

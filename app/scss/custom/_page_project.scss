@@ -46,9 +46,11 @@
     ;
 
     .filter-item {
+      position: relative;
+
       &:nth-child(2) {
-        border-left: 1px solid map-get($theme-colors, 'ahd-secondary' );;
-        border-right: 1px solid map-get($theme-colors, 'ahd-secondary' );;
+        border-left: 1px solid map-get($theme-colors, 'ahd-secondary');
+        border-right: 1px solid map-get($theme-colors, 'ahd-secondary');
 
         @include media-breakpoint-down(sm) {
           border: 0;
@@ -63,6 +65,57 @@
           width: 20px;
           height: auto;
           margin-right: 0.5rem;
+        }
+      }
+
+      .filter-panel {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        padding: 8px;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 3px 20px 0 rgba(42, 56, 136, 0.16);
+
+        .input-group {
+          width: unset;
+
+          input {
+            border: 0;
+            background: #f2f3f4;
+            border-radius: 6px 0 0 6px;
+          }
+
+          button {
+            background: #f2f3f4;
+            border-radius: 0 6px 6px 0;
+          }
+        }
+
+        .autocomplete-result {
+          max-height: 150px;
+          overflow: auto;
+          margin-top: .5rem;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 3px;
+            background-color: #f2f3f4;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 3px;
+            background-color: map-get($theme-colors, 'ahd-secondary');
+          }
+
+        }
+
+        .item {
+          padding: 10px 0;
+          color: #7c8087;
+          font-size: 14px;
+          line-height: 19px;
         }
       }
     }

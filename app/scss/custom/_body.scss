@@ -5,24 +5,30 @@
     aspect-ratio: 16/9;
     background-size: cover;
     position: relative;
+
     @include media-breakpoint-down(md) {
       aspect-ratio: unset;
       min-height: 350px;
     }
+
     .search-form {
       position: absolute;
       bottom: 80px;
       width: 100%;
       text-align: center;
+
       @include media-breakpoint-down(lg) {
         bottom: 40px;
       }
+
       @include media-breakpoint-down(md) {
         bottom: 20px;
       }
+
       .container {
         max-width: 1000px;
       }
+
       .slogan {
         margin-bottom: 2.5rem;
         color: #fff;
@@ -30,15 +36,18 @@
         font-weight: 500;
         line-height: 41px;
         letter-spacing: 0.17px;
+
         @include media-breakpoint-down(lg) {
           font-size: 26px;
           margin-bottom: 2rem;
         }
+
         @include media-breakpoint-down(md) {
           font-size: 22px;
           margin-bottom: 1.5rem;
         }
       }
+
       .search-container {
         padding: 16px;
         border-radius: 12px;
@@ -46,6 +55,7 @@
         backdrop-filter: blur(30px);
         background-color: #f2f3f460;
         position: relative;
+
         .input-search-group {
           position: relative;
           background-color: #fff;
@@ -59,15 +69,18 @@
             box-shadow: none;
             outline: 0;
             border: 0;
+
             &::placeholder {
               color: #8e8e93;
               line-height: 26px;
             }
           }
+
           button {
             padding: 14px 29px;
             color: #fff;
             box-shadow: none;
+
             @include media-breakpoint-down(md) {
               padding: 8px 18px;
             }
@@ -85,15 +98,18 @@
             width: 100%;
             top: 85px;
             box-shadow: 0 3px 20px 0 rgba(42, 56, 136, 0.16);
+
             &.show {
               visibility: visible;
               opacity: 1;
             }
+
             .media {
               .media-body {
                 .media-title {
                   text-align: left;
                 }
+
                 .media-description {
                   .fa-map-marker {
                     color: #f59696;
@@ -101,8 +117,10 @@
                 }
               }
             }
+
             .suggest-text-container {
               text-align: left;
+
               .suggest-text {
                 padding: 0.5rem 0;
               }
@@ -118,28 +136,35 @@
       }
     }
   }
+
   .front-introduce {
     .introduce-amount {
       padding: 80px 0;
+
       .highlight-number {
         font-size: 52px;
         line-height: 41px;
         font-weight: bold;
         color: map-get($theme-colors, "ahd-primary");
         margin-bottom: 1rem;
+
         @include media-breakpoint-down(md) {
           font-size: 40px;
         }
       }
+
       @include media-breakpoint-down(md) {
         padding: 50px 0;
       }
     }
+
     .featured-projects {
       padding: 100px 0;
+
       @include media-breakpoint-down(md) {
         padding: 50px 0;
       }
+
       .featured-title {
         font-size: 30px;
         line-height: 41px;
@@ -147,37 +172,46 @@
         letter-spacing: 0.17px;
         margin-bottom: 0.75rem;
       }
+
       .featured-projects-items {
         margin-top: 48px;
+
         .item {
           padding: 8px 8px 8px 20px;
           border-left: 8px solid map-get($theme-colors, "ahd-success");
           margin-bottom: 2.5rem;
+
           &:hover {
             .info-hidden {
               max-height: 300px;
             }
           }
+
           .item-title {
             font-size: 24px;
             margin-bottom: 0.75rem;
           }
+
           .info-hidden {
             max-height: 0;
             margin-top: 0.5rem;
             overflow: hidden;
             opacity: 0.6;
             transition: max-height 0.5s;
+
             .info-small {
               font-size: 14px;
             }
+
             .load-more {
               color: map-get($theme-colors, "ahd-success");
             }
           }
+
           @include media-breakpoint-down(md) {
             padding: 0 12px;
             margin-bottom: 1rem;
+
             .item-title {
               font-size: 20px;
               margin-bottom: 0.25rem;
@@ -185,12 +219,14 @@
           }
         }
       }
+
       .featured-projects-image {
         height: 100%;
         object-fit: cover;
       }
     }
   }
+
   .front-carousel {
     padding-top: 65px;
     padding-bottom: 96px;
@@ -198,14 +234,21 @@
     width: 100%;
     background-size: cover;
     background-position: right;
+
     .carousel-title {
       font-size: 30px;
       line-height: 41px;
       letter-spacing: 0.17px;
       margin-bottom: 1.5rem;
     }
+
     .carousel-subtitle {
       margin-bottom: 3rem;
+    }
+
+    .carousel {
+      margin-left: -.5rem;
+      margin-right: -.5rem;
     }
   }
 }

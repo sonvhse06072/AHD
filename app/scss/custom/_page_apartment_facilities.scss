@@ -1,0 +1,34 @@
+.page-apartment-facilities {
+    position: relative;
+
+    .facilities-banner {
+        background: url('../images/banner/banner-detail-apartment.png') no-repeat;
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .facilities-title {
+            color: #fff;
+            margin-bottom: .75rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #fff;
+            max-width: 500px;
+        }
+    }
+
+    .facilities-body {
+        padding: 60px 0;
+
+        .intro {
+            .icon-info {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+}

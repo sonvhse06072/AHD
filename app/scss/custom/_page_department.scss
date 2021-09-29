@@ -1,45 +1,6 @@
 .page-department {
     position: relative;
 
-    .ahd-breadcrumb {
-
-        position: absolute;
-        background: #00C19950;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-
-        .navbar-nav {
-            .nav-item {
-                padding-top: 0;
-                padding-bottom: 18px;
-                border-color: transparent;
-
-                .nav-link {
-                    color: #8FFCE5;
-                }
-
-                &.active {
-                    border-color: #fff;
-
-                    .nav-link {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        .breadcrumb {
-            .breadcrumb-item {
-                color: #fff;
-
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
-
     .department-banner {
         background: url('../images/list-depart-1.png') no-repeat;
         width: 100%;
@@ -72,6 +33,20 @@
             color: #fff;
             font-weight: 500;
         }
+
+        @include media-breakpoint-down(lg) {
+            padding-top: 15%;
+            padding-bottom: 15%;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding-top: 0;
+
+            .hr-img {
+                width: 120px;
+                margin-bottom: 1.5rem;
+            }
+        }
     }
 
     .department-carousel {
@@ -93,5 +68,139 @@
             margin-left: -.5rem;
             margin-right: -.5rem;
         }
+    }
+
+    .department-description {
+        padding: 120px 0;
+        background: #1d293f;
+
+        .slogan {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .department-info {
+            color: #fff;
+            max-width: 60%;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            color: #fff;
+            padding: 16px 48px;
+        }
+
+        .department-image {
+            margin-top: 5rem;
+
+            img {
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+
+            .card-body {
+                background-image: linear-gradient(to top, #1d293f, rgba(66, 76, 94, 0.75) 41%, rgba(104, 112, 126, 0));
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            .department-info {
+                max-width: 80%;
+            }
+
+            .department-image {
+                img {
+                    aspect-ratio: unset;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 50px 0;
+
+            .department-info {
+                max-width: unset;
+            }
+
+            button {
+                padding: 8px 24px;
+            }
+
+            .department-image {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .department-general-info {
+        padding: 120px 0;
+
+        .info-label {
+            font-size: 14px;
+            color: #8e8e93;
+        }
+
+        .info-value {
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 50px 0;
+
+            .info-value {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .banner-2-department {
+        background: url("../images/banner/banner-2-department.png") no-repeat;
+        width: 100%;
+        background-size: cover;
+        aspect-ratio: 3/1;
+        height: 500px;
+    }
+
+    .department-facilities {
+        padding: 120px 0;
+
+        .facilities-label {
+            margin-bottom: 3.5rem;
+            text-align: center;
+        }
+
+        .icon-info {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 2rem;
+        }
+
+        .facilities-item {
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 50px 0;
+
+            .icon-info {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 1rem;
+            }
+
+            .facilities-item {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .department-galary {
+        padding: 4.5rem 0;
+        background: #f8f9f9;
     }
 }

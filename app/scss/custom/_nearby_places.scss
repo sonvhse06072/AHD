@@ -1,0 +1,55 @@
+.page-nearby-places {
+    position: relative;
+
+    .nearby-places-banner {
+        background: url('../images/banner/banner-detail-apartment.png') no-repeat;
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .nearby-places-label {
+            color: #fff;
+            margin-bottom: .75rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #fff;
+            max-width: 500px;
+        }
+    }
+
+    .nearby-places-body {
+        padding: 60px 0;
+
+        .input-group {
+            width: unset;
+
+            .place-filter {
+                width: 300px;
+                border: 0;
+                background: #f2f3f4;
+                border-radius: 6px 0 0 6px;
+            }
+
+            .btn-search {
+                background: #f2f3f4;
+                border-radius: 0 6px 6px 0;
+            }
+        }
+
+        .place-link {
+            color: #8e8e93;
+
+            &:hover {
+                color: map-get($theme-colors, 'ahd-primary');
+            }
+
+            &.active {
+                color: map-get($theme-colors, 'ahd-primary');
+            }
+        }
+    }
+}

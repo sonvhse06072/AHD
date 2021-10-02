@@ -1,10 +1,11 @@
 (function ($) {
   $(document).ready(function () {
     $("body").on("keyup", "#front-search-input", function (e) {
-      $(".suggestion").addClass("show");
-    });
-    $("body").on("focusout", "#front-search-input", function (e) {
-      $(".suggestion").removeClass("show");
+      if (!this.value) {
+        $(".suggestion").removeClass("show");
+      } else {
+        $(".suggestion").addClass("show");
+      }
     });
     if ($(".carousel").length > 0) {
       $(".carousel").slick({
@@ -38,5 +39,8 @@
         ],
       });
     }
+    $(".input-file").click(function () {
+      $("#ultilities-file-input").click();
+    });
   });
 })(jQuery);

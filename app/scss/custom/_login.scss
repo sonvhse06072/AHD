@@ -1,0 +1,66 @@
+.login-container {
+    background: url(../images/banner/login-bg.png) no-repeat;
+    background-size: 100vh;
+    height: 100vh;
+    background-position: top right;
+
+    .login-box {
+        width: 900px;
+        max-width: 100%;
+        height: 100vh;
+        padding: 50px 15px;
+
+        .logo {
+            width: 480px;
+            max-width: 100%;
+
+            img {
+                width: 140px;
+            }
+        }
+
+        .login-modal {
+            width: 520px;
+            max-width: 100%;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+
+            .register-label {
+                color: #8e8e93;
+                margin-bottom: 1.5rem;
+            }
+
+            .form-control {
+                padding: 1rem 1.5rem;
+                border-radius: 6px;
+            }
+
+            .input-group {
+                .input-group-text {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    background: #fff;
+                }
+
+                input {
+                    border-left: 0;
+                    padding-left: 0;
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+
+
+        }
+
+        .copy-right {
+            width: 480px;
+            max-width: 100%;
+            color: #8e8e93;
+            font-size: 14px;
+        }
+    }
+
+
+}

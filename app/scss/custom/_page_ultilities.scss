@@ -160,5 +160,24 @@
                 margin: 12px 0;
             }
         }
+
+        .file-container {
+            padding-top: 2rem;
+        }
+
+        .input-file {
+            border-radius: 8px;
+            border: 1.5px solid #e5e7e9;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4371fb;
+            cursor: pointer;
+
+            i {
+                font-size: 30px;
+            }
+        }
     }
 }

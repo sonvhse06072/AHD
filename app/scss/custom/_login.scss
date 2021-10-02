@@ -51,6 +51,23 @@
                 }
             }
 
+            .navbar-nav {
+                .nav-item {
+                    padding: 0;
+
+                    .nav-link {
+                        color: #8e8e93;
+                    }
+
+                    &.active {
+                        border-color: map-get($theme-colors, 'ahd-blue');
+
+                        .nav-link {
+                            color: map-get($theme-colors, 'ahd-blue');
+                        }
+                    }
+                }
+            }
 
         }
 
@@ -61,6 +78,4 @@
             font-size: 14px;
         }
     }
-
-
 }

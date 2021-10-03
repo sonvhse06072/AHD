@@ -217,4 +217,8 @@ a {
 .btn-ahd-success {
   color: #fff;
   padding: 16px 20px;
+
+  @include media-breakpoint-down(md) {
+    padding: 8px 12px;
+  }
 }

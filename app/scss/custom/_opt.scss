@@ -1,0 +1,38 @@
+.otp-modal {
+    max-width: 95%;
+    width: 550px;
+    margin: auto;
+    margin-top: 7%;
+    border: 1px solid #e5e7e9;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: #fff;
+
+    .form-control {
+        border: 2px solid map-get($theme-colors, 'ahd-success');
+        background-color: #fff;
+        color: map-get($theme-colors, 'ahd-success');
+        font-size: 40px;
+        line-height: 40px;
+        aspect-ratio: 1/1;
+    }
+
+    .note-time {
+        color: #0E1E8E;
+        font-size: 20px;
+        line-height: 27px;
+
+        .time {
+            color: map-get($theme-colors, 'ahd-red');
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 12px;
+
+        .form-control {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+}

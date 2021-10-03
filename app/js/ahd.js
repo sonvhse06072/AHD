@@ -39,6 +39,24 @@
         ],
       });
     }
+    if ($(".carousel-2-item").length > 0) {
+      $(".carousel-2-item").slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: false,
+        prevArrow: false,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    }
     $(".input-file").click(function () {
       $("#ultilities-file-input").click();
     });

@@ -1,0 +1,98 @@
+.loan-modal {
+    width: 1000px;
+    max-width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    padding: 3rem 2rem;
+    margin: 7% auto;
+
+    .form-control {
+        padding: .75rem 1rem;
+    }
+
+    &.has-chart {
+        width: 1600px;
+    }
+
+    .carousel-2-item {
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+
+        .chart-item {
+            margin-left: .5rem;
+            margin-right: .5rem;
+            padding: 2.5rem 1.75rem;
+            border-radius: 16px;
+            border: solid 1.5px #e5e7e9;
+
+            .chart-container {
+                position: relative;
+                width: 300px;
+                max-width: 100%;
+
+                .value-total-label {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateY(-50%) translateX(-50%);
+                }
+            }
+
+        }
+
+        .chart-value {
+            &>* {
+                min-width: 175px;
+            }
+
+            .chart-label {
+                color: #7c8087;
+                font-size: 14px;
+                line-height: 19px;
+            }
+
+            .prepay {
+                i {
+                    color: #4371fb;
+                }
+            }
+
+            .original {
+                i {
+                    color: #00c199;
+                }
+            }
+
+            .interest-rate {
+                i {
+                    color: #ffcb32;
+                }
+            }
+        }
+
+
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 1.5rem 1rem;
+
+        .carousel-2-item {
+            .chart-item {
+                padding: 1.5rem 1rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 1rem .75rem;
+
+        .carousel-2-item {
+            .chart-item {
+                padding: 0;
+                border: 0;
+            }
+        }
+    }
+
+}

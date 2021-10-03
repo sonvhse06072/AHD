@@ -1,0 +1,139 @@
+.page-finance-support {
+    position: relative;
+
+    .finance-support-banner {
+        background: url('../images/banner/create-record.png') no-repeat;
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .finance-support-label {
+            color: #fff;
+            margin-bottom: .75rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #fff;
+            max-width: 500px;
+        }
+    }
+
+    .finance-report {
+        padding: 2rem 3rem;
+        border-radius: 16px;
+        border: solid 1.5px #e5e7e9;
+        margin-top: 3rem;
+
+        .input-group {
+            width: 130px;
+
+            .form-control {
+                text-align: right;
+                background-color: #f2f3f4;
+                border: 0;
+                box-shadow: none;
+                padding-right: 0;
+            }
+
+            .input-group-text {
+                background-color: #f2f3f4;
+                padding-left: 0;
+                border: 0;
+            }
+        }
+
+        input[type=range] {
+            &::-webkit-slider-runnable-track {
+                border: none;
+            }
+        }
+
+        .btn-outline-finance {
+            border: solid 1px #e5e7e9;
+        }
+
+        .chart-container {
+            width: 270px;
+            max-width: 100%;
+            margin: auto;
+            position: relative;
+
+            .value-total-label {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+            }
+        }
+
+        .chart-value {
+            margin-top: 2rem;
+
+            .chart-highlight {
+                margin-bottom: 3rem;
+            }
+
+            .chart-label {
+                color: #7c8087;
+                font-size: 14px;
+                line-height: 19px;
+            }
+
+            .prepay {
+                i {
+                    color: #4371fb;
+                }
+            }
+
+            .original {
+                i {
+                    color: #00c199;
+                }
+            }
+
+            .interest-rate {
+                i {
+                    color: #ffcb32;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 1rem .5rem
+        }
+    }
+
+    .payment-route {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        table {
+            thead {
+                tr {
+                    border-color: #e5e7e9;
+
+                    th {
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                        background-color: #ddf3f1;
+                        border-bottom-color: #ddf3f1 !important;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border-color: #e5e7e9;
+
+                    td {
+                        padding-top: 24px;
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

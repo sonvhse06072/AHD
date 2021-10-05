@@ -1,0 +1,49 @@
+.page-apartment-list {
+
+    .apartment-list-banner {
+        background: url('../images/banner/banner-detail-apartment.png') no-repeat;
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .apartment-list-label {
+            color: #fff;
+            margin-bottom: .75rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #fff;
+            max-width: 500px;
+        }
+    }
+
+    .apartment-list-body {
+        padding: 60px 0;
+    }
+
+    .btn-filter {
+        padding: 12px 20px;
+        border: 1px solid map-get($theme-colors, 'ahd-secondary');
+
+        &:hover {
+            color: map-get($theme-colors, 'ahd-primary');
+            border-color: map-get($theme-colors, 'ahd-primary');
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .btn-dropdown {
+        padding: 12px 20px;
+        border: 0;
+
+        &:hover {
+            color: map-get($theme-colors, 'ahd-primary');
+        }
+    }
+}

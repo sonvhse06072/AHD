@@ -1,0 +1,116 @@
+.page-news {
+
+    .news-banner {
+        background: url('../images/banner/banner-detail-apartment.png') no-repeat;
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .news-label {
+            color: #fff;
+            margin-bottom: .75rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #fff;
+            max-width: 500px;
+        }
+    }
+
+    .news-body {
+        padding: 60px 0;
+
+        .media {
+            margin-bottom: 2rem;
+
+            img {
+                width: 35%;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+            }
+
+            .media-title {
+                margin-bottom: .5rem;
+            }
+
+            .media-description {
+                margin-bottom: .5rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+
+                .media-body {
+                    padding: 0;
+                    margin-top: .5rem;
+                }
+            }
+        }
+
+        .receive-information-form {
+            width: 100%;
+            color: #fff;
+            position: relative;
+            padding: calc(1rem + 0.9vw);
+            border-radius: 6px;
+            backdrop-filter: blur(1px);
+            background-image: linear-gradient(to top, #1d293f35, #1d293f35);
+            margin-bottom: 2rem;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 6px;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            .input-group {
+                input {
+                    padding: 12px;
+                }
+
+                .btn-receive {
+                    background-color: #4371fb;
+                    color: #fff;
+                }
+            }
+        }
+
+        .popular-post {
+            .media {
+                margin: 1.5rem 0;
+
+                img {
+                    width: 30%;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .content {
+            .info {
+                color: #7c8087;
+                font-size: 14px;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.page-contact {
+
+    .contact-banner {
+        background: url('../images/banner/banner-detail-apartment.png') no-repeat;
+        width: 100%;
+        height: 320px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .contact-label {
+            color: #fff;
+            margin-bottom: .75rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #fff;
+            max-width: 500px;
+        }
+    }
+
+    .contact-body {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+
+        .card {
+            border: 0;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .card-body {
+                padding: 16px 0;
+
+                .description {
+                    color: #7c8087;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .form-control {
+        padding: 16px 20px;
+        border-radius: 10px;
+    }
+}

@@ -60,5 +60,15 @@
     $(".input-file").click(function () {
       $("#ultilities-file-input").click();
     });
+
+    $("body").on("click", "#header-search-btn", function () {
+      $("#hide-on-search").removeClass("d-md-flex");
+      $("#search-bar").removeClass("d-none");
+    });
+
+    $("body").on("click", "#exit-search", function () {
+      $("#hide-on-search").addClass("d-md-flex");
+      $("#search-bar").addClass("d-none");
+    });
   });
 })(jQuery);

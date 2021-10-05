@@ -222,3 +222,10 @@ a {
     padding: 8px 12px;
   }
 }
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}

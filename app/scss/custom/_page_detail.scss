@@ -177,6 +177,30 @@
                         color: map-get($theme-colors, 'ahd-primary');
                     }
                 }
+
+                .filter-advance {
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    top: 65px;
+                    width: 100%;
+                    box-shadow: 0px 8px 32px rgba(3, 44, 71, 0.24);
+                    border-radius: 8px;
+                    z-index: 1;
+                    background: #fff;
+                    padding: 20px;
+                    transition: visibility, opacity .3s;
+
+                    .btn-search-item {
+                        border: 1px solid #CCD3D9;
+                    }
+
+                    &.show {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                }
             }
 
             .list-depart-card-body {

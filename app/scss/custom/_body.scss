@@ -7,7 +7,7 @@
     background-size: cover;
     position: relative;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       aspect-ratio: unset;
       min-height: 350px;
     }

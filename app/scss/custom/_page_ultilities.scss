@@ -22,79 +22,6 @@
     }
 
     .ultilities-body {
-        .step-item {
-            width: 225px;
-            max-width: 100%;
-            height: 70px;
-            position: relative;
-
-            .step-label {
-                color: #8e8e93;
-                padding-left: 20px;
-
-                &.first {
-                    padding-left: 0;
-                }
-
-                &.last {
-                    padding-left: 40px;
-                }
-            }
-
-            .step-shape {
-                position: absolute;
-                bottom: 0;
-                height: 40px;
-                background: #e5e7e9;
-                transform: skew(-45deg, 0deg);
-                width: calc(100% - var(--bs-gutter-x));
-
-                &.first {
-                    transform: unset;
-                    background: unset;
-                    border-left: 40px solid;
-                    border-top: 40px solid;
-                    border-color: #e5e7e9;
-                    border-right: 40px solid transparent !important;
-                    width: 100%;
-                }
-
-                &.last {
-                    transform: unset;
-                    background: unset;
-                    border-bottom: 40px solid;
-                    border-right: 40px solid;
-                    border-color: #e5e7e9;
-                    border-left: 40px solid transparent !important;
-                    width: 100%;
-                }
-            }
-
-            &.active {
-                .step-shape {
-                    background: #00c199;
-                    border-color: #00c199;
-
-                    &.first,
-                    .last {
-                        background: unset;
-                    }
-                }
-
-                .step-label {
-                    color: #00c199;
-                }
-
-            }
-
-            @include media-breakpoint-down(md) {
-                display: none;
-
-                &.active {
-                    display: block;
-                }
-            }
-        }
 
         .form-group-main {
             padding-top: 2rem;
@@ -110,6 +37,10 @@
                 color: #8e8e93;
                 margin-top: 2rem;
                 margin-bottom: 1rem;
+            }
+
+            .sub-group-info {
+                color: #8e8e93;
             }
 
             .form-control {

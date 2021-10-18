@@ -28,6 +28,10 @@
       flex-direction: row;
       align-items: center;
 
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+      }
+
       .nav-item {
         padding: 22px 0;
         box-sizing: border-box;

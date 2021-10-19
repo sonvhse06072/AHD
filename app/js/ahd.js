@@ -70,5 +70,13 @@
       $("#hide-on-search").addClass("d-md-flex");
       $("#search-bar").addClass("d-none");
     });
+    $("body").on("click", "#show-sidebar", function (e) {
+      $(e.target).toggleClass("fa-bars fa-close");
+      $(".nav-mobile").toggleClass("show");
+    });
+    $("body").on("click", ".show-sub-menu", function (e) {
+      console.log(e.target);
+      $(e.target).closest(".nav-item").children(".nav-sub").toggleClass("show");
+    });
   });
 })(jQuery);

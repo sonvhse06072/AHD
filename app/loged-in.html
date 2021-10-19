@@ -29,9 +29,12 @@
     <header class="ahd-header">
         <div class="info-header">
             <div class="container-xl">
-                <div class="d-flex justify-content-betweem align-items-center">
-                    <i class="fas fa-bars d-block d-md-none text-white" id="show-sidebar"></i>
-                    <div class="row ms-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="row d-md-none">
+                        <a href="#" class="col-auto"><i class="fas fa-phone-alt me-2"></i>028 8427 923</a>
+                        <a href="#" class="col-auto"><i class="far fa-envelope me-2"></i>support@acd.vn</a>
+                    </div>
+                    <div class="row ms-auto d-none d-md-block">
                         <a href="#" class="col-auto">Giới thiệu</a>
                         <a href="#" class="col-auto">Liên hệ</a>
                         <a href="#" class="col-auto">Tin tức</a>
@@ -41,11 +44,12 @@
         </div>
         <nav class="ahd-navbar">
             <div class="container-xl">
-                <div class="d-none d-md-flex justify-content-md-between justify-content-end align-items-center flex-wrap"
+                <div class="d-flex justify-content-between align-items-center flex-wrap py-3 py-md-0"
                     id="hide-on-search">
                     <a href="#" class="nav-brand">
                         <img src="images/logo/Logo-ACD.png" alt="">
                     </a>
+                    <i class="fas fa-bars d-block d-md-none" id="show-sidebar"></i>
                     <div class="navbar-nav">
                         <div class="nav-item">
                             <a href="project.html" class="nav-link">Dự án của ACD</a>
@@ -73,8 +77,8 @@
                                 </div>
                             </div>
                         </div>
-                        <i class="fa fa-search px-3" id="header-search-btn"></i>
-                        <i class="far fa-bell px-3"></i>
+                        <i class="fa fa-search d-none d-md-block px-3" id="header-search-btn"></i>
+                        <i class="far fa-bell d-none d-md-block px-3"></i>
                         <div class="nav-item p-0 border-0 has-avatar">
                             <img src="images/avatar/avatar.png" alt="" class="avatar">
                             <div class="nav-sub">
@@ -130,6 +134,47 @@
                         </div>
                     </div>
                     <i class="far fa-times-circle text-ahd-gray" id="exit-search"></i>
+                </div>
+            </div>
+            <div class="navbar-nav nav-mobile">
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Dự án ACD</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Tiện ích <i class="fas fa-chevron-down show-sub-menu ms-auto"></i></a>
+                    <div class="nav-sub">
+                        <a class="text-link" href="#">
+                            <input type="checkbox" name="" id="">
+                            Tạo hồ sơ</a>
+                        <a class="text-link" href="#">
+                            <input type="checkbox" name="" id="">
+                            Chấm điểm hồ
+                            sơ</a>
+                        <a class="text-link" href="#">
+                            <input type="checkbox" name="" id="">
+                            Tư vấn tài
+                            chính</a>
+                        <a class="text-link" href="#">
+                            <input type="checkbox" name="" id="">
+                            Tư vấn pháp lý</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Giới thiệu</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Liên hệ</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Tin tức</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <i class="far fa-user me-2"></i>
+                            Đăng nhập
+                        </span>
+                    </a>
                 </div>
             </div>
         </nav>

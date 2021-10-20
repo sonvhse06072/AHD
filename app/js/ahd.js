@@ -78,5 +78,17 @@
       console.log(e.target);
       $(e.target).closest(".nav-item").children(".nav-sub").toggleClass("show");
     });
+    $("body").on("change", "#file-upload-multiple", function (e) {
+      console.log($(e.target).prop("files")[0]);
+      var output = $('.file-list');
+      var children = "";
+      for (var i = 0; i < $(e.target).prop("files").length; ++i) {
+        children += '<div class="d-flex align-items-center col-auto"><i class="far fa-file-pdf me-2 h2 mb-0"></i>' + $(e.target).prop("files")[i].name + '<i class="fas fa-times h2 ms-2 text-ahd-red mb-0"></i></div>';
+      }
+      $(output).html('<div class="row gy-3">'+children+'</div>');
+    });
+    $("body").on("click", ".upload-btn", function (e) {
+      $('#file-upload-multiple').click();
+    });
   });
 })(jQuery);

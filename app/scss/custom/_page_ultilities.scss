@@ -128,5 +128,42 @@
                 width: 135px;
             }
         }
+
+        .input-file-container {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding: 70px 12px 12px 12px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            background: rgba(230, 236, 249, 0.5);
+            border: 1px dashed #879AA9;
+            box-sizing: border-box;
+            border-radius: 10px;
+            .upload-btn {
+                width: 60px;
+                height: 60px;
+                cursor: pointer;
+            }
+            .upload-label {
+                margin-top: 1.25rem;
+                color: #879AA9;
+            }
+            .file-list {
+                height: 90px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+
+        .btn-ahd-success {
+            width: 225px;
+            &.disabled {
+                background-color: #E5E7E9;
+                border-color: #E5E7E9;
+                color: #C4C4C4;
+            }
+        }
     }
 }

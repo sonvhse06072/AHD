@@ -18,11 +18,12 @@
                 border-radius: 50%;
                 width: calc(150px + 10vw);
                 height: calc(150px + 10vw);
-                object-fit: cover;
+                object-fit: contain;
                 border: solid 4px #fff;
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                background: #fff;
             }
 
             .btn-edit {

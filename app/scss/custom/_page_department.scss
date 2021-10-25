@@ -104,6 +104,26 @@
             }
         }
 
+        .info-label {
+            font-size: 14px;
+            color: #8e8e93;
+        }
+
+        .info-value {
+            font-size: 24px;
+            line-height: 31px;
+            color: #fff;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 50px 0;
+
+            .info-value {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
         @include media-breakpoint-down(lg) {
             .department-info {
                 max-width: 80%;
@@ -144,6 +164,13 @@
         .info-value {
             font-size: 24px;
             line-height: 31px;
+        }
+
+        .department-info {
+            max-width: 80%;
+            @include media-breakpoint-down(md) {
+                max-width: 100%;
+            }
         }
 
         @include media-breakpoint-down(md) {
@@ -199,8 +226,66 @@
         }
     }
 
+    .department-facilities-md {
+        padding: calc(30px + 3vw) 0;
+
+        .facilities-padding {
+            @include media-breakpoint-up(lg) {
+                padding-left: 10%;
+            }
+        }
+        
+        .facilities-grid {
+            grid-template-columns: repeat(2, 200px);
+            grid-row-gap: 1.5rem;
+            .icon-info {
+                width: 50px;
+                height: 50px;
+            }
+            @include media-breakpoint-down(lg) {
+                grid-template-columns: 50% 50%;
+            }
+        }
+    }
+
     .department-galary {
         padding: 4.5rem 0;
         background: #f8f9f9;
+    }
+
+    .department-image-wrapper {
+        .image-card-department {
+            position: relative;
+            .ratio {
+                --bs-aspect-ratio: 36%;
+            }
+            .card-body {
+                opacity: 0;
+                transition: opacity .3s;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                max-width: 350px;
+                background-color: rgba(29, 41, 63, 0.9);
+                clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+                background-blend-mode: darken;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 13% 0 7%;
+                .card-title {
+                    color: #fff;
+                }
+                .description {
+                    color: #BFBFBF;
+                }
+            }
+            &:hover {
+                .card-body {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
